@@ -16,7 +16,7 @@ function fruta(fruta) {
     }
 }
 
-fruta('maçã')
-fruta('kiwi')
-fruta('melancia')
-fruta('alcatra')
+fruta('maçã');
+fruta('kiwi');
+fruta('melancia');
+fruta('alcatra');
