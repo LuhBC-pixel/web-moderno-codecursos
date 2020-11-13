@@ -5,4 +5,4 @@ function converterIdadeEmAnosParaDias(idade) {
 }
 
 converterIdadeEmAnosParaDias(25);
-converterIdadeEmAnosParaDias(70)
+converterIdadeEmAnosParaDias(70);
