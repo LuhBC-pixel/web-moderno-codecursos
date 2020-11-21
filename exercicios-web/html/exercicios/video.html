@@ -31,14 +31,20 @@
 </style>
 
 <script>
-    const video = document.getElementsByTagName('video')[0];
-    const botaoPlay = document.querySelector('[wm-play]');
-    botaoPlay.addEventListener('click', () => {
-        video.play();
-    })
-    const botaoPause = document.querySelector('[wm-pause]');
-    botaoPause.addEventListener('click', () => {
-        video.pause();
-    })
+    function configurarVideo(id) {
+        const video = document.getElementById(id);
+        video.oncontextmenu = () => false;
+
+        document.querySelector(`[wm-play=${id}]`).onclick = e => video.play();
+        document.querySelector(`[wm-pause=${id}]`).onclick = e => video.pause();
+
+        setInterval(() => {
+            const percentual = (video.currentTime / video.duration) * 100; 
+            const valorDiv = document.querySelector(`[wm-progresso=${id}] > div`);
+            valorDiv.style.width = `${percentual}%`;
+            valorDiv.innerHTML = `${percentual.toFixed(1)}%`;
+        }, 500);
+    }
     
+    configurarVideo('meuVideo');
 </script>
