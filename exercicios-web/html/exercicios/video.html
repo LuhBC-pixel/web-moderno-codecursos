@@ -29,3 +29,16 @@
         width: 0%;
     }
 </style>
+
+<script>
+    const video = document.getElementsByTagName('video')[0];
+    const botaoPlay = document.querySelector('[wm-play]');
+    botaoPlay.addEventListener('click', () => {
+        video.play();
+    })
+    const botaoPause = document.querySelector('[wm-pause]');
+    botaoPause.addEventListener('click', () => {
+        video.pause();
+    })
+    
+</script>
