@@ -36,7 +36,9 @@
     </div>
 
     <div class="dropdown">
-        <button class="btn btn-danger btn-lg dropdown-toggle" data-toggle="dropdown">Comprar!</button>
+        <button class="btn btn-danger btn-lg dropdown-toggle" data-toggle="dropdown">
+            Comprar!
+        </button>
         <div class="dropdown-menu">
             <a href="" class="dropdown-item">Paypal</a>
             <a href="" class="dropdown-item">Pagseguro</a>
@@ -58,8 +60,7 @@
     </div>
 
     <div class="progress mb-4">
-        <div class="progress-bar progress-bar-striped bg-success"
-        style="width:80%">80%</div>
+        <div class="progress-bar progress-bar-striped bg-success" style="width:80%">80%</div>
     </div>
 
     <div class="progress" style="height: 40px;">
@@ -147,6 +148,18 @@
 <hr>
 
 <!-- Tooltip -->
+<div>
+    <div class="alert alert-warning">
+        Precisa chamar uma função JS!
+        <strong>E agora?</strong>
+    </div>
+
+    <button class="btn btn-danger" 
+        data-toggle="tooltip" data-placement="right" 
+        title="Pense antes!">
+        Excluir
+    </button>
+</div>
 
 <h1 class="mt-5">6. Slider -
     <small>
@@ -167,5 +180,6 @@
 <!-- Accordion -->
 
 <script>
-    // ...
+    // funciona?
+    $('[data-toggle="tooltip"]').tooltip();
 </script>
