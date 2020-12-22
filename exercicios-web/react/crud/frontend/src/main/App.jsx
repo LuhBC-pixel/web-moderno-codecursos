@@ -11,7 +11,7 @@ import Footer from '../components/template/Footer';
 export default props =>
     <div className="app">
         <Logo />
-        <Nav />
+        <Nav icon="home" title="Início" user="users" titleuser="Usuários"/>
         <Main icon="home" title="Inicio"
             subtitle="Segundo Projeto do capítulo de React." />
         <Footer />

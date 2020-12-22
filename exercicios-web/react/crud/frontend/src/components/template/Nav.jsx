@@ -4,12 +4,11 @@ import React from 'react';
 export default props =>
     <aside className="menu-area">
         <nav className="menu">
-            {/* Refatorar */}
             <a href="#/">
-                <i className="fa fa-home"></i> Início
+                <i className={`fa fa-${props.icon}`}></i> {props.title}
             </a>
             <a href="#/users">
-                <i className="fa fa-users"></i> Usuários
+                <i className={`fa fa-${props.user}`}></i> {props.titleuser}
             </a>
         </nav>
     </aside>
